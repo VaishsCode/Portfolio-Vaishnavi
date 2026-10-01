@@ -7,3 +7,5 @@ Welcome to my personal portfolio website!
 
 ## About The Project
 This website showcases my projects, skills, and personal work.
+
+> ⚠️ **Note:** This project is currently **a work in progress**.
