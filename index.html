@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishnavi Gadade | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@500;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="./assets/Anime Window Background.jpg"
+      alt="Background"
+      class="background-image"
+    />
+    <div class="color-ascend-overlay"></div>
+
+    <header class="sticky-header">
+      <nav>
+        <a href="#hero-section">Home</a>
+        <a href="#about-section">About Me</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#links-section">Links</a>
+        <a href="#contact-section">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero-section" class="page-section text-center">
+        <img
+          class="profile"
+          src="./assets/profile-image.png"
+          alt="Vaishnavi Gadade"
+        />
+        <h1>Vaishnavi Gadade</h1>
+        <h2>MCA Student | Love to Create ❤️ | Always Learning</h2>
+      </section>
+
+      <section id="about-section" class="page-section">
+        <div class="glass-card">
+          <h1>About Me</h1>
+          <p>
+            Hello! I'm Vaishnavi, an MCA student with a passion for technology.
+            I enjoy blending my artistic side with logic to build creative and
+            interactive tech experiences.
+          </p>
+          <p>
+            While I am early in my tech journey, I am highly adaptable, eager to
+            learn new frameworks, and focused on growing my skills every day.
+            When I'm not coding, you can find me exploring new art styles or
+            relaxing.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills-section" class="page-section">
+        <div class="glass-card">
+          <h1>My Skills</h1>
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Web Development</h3>
+              <div class="skill-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span>C / C++</span>
+                <span>Java</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <div class="skill-tags">
+                <span>Git & GitHub</span>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-section" class="page-section">
+        <div class="glass-card projects-card">
+          <h1>Featured Project</h1>
+
+          <div class="featured-project-item">
+            <div class="project-image-container" onclick="openModal()">
+              <img
+                src="./assets/StudyScript-Dashboard-08-24-2026_12_11_AM.png"
+                alt="StudyScript Dashboard Interface"
+                class="project-screenshot"
+              />
+              <div class="image-overlay-hint">🔍 Click to Enlarge</div>
+            </div>
+
+            <div class="project-header">
+              <h2>🎓StudyScript</h2>
+              <span class="project-badge">BCA Final Year Project</span>
+            </div>
+
+            <p class="project-description">
+              A comprehensive academic management platform designed to help
+              students organize assignments, track exam countdowns, manage daily
+              tasks, and monitor study progress through a centralized dashboard.
+              Built using modern web standards and AI-assisted workflows.
+            </p>
+
+            <div class="project-features">
+              <h3>Key Highlights</h3>
+              <ul>
+                <li>🔐 Secure User Authentication & Role-Based Admin Panel</li>
+                <li>🧪 Exam Countdown & Daily Study Progress Visualizations</li>
+                <li>🌙 Persistent Light/Dark Mode using LocalStorage</li>
+              </ul>
+            </div>
+
+            <div class="skill-tags">
+              <span>Python 3.12</span>
+              <span>Flask</span>
+              <span>Flask-SQLAlchemy</span>
+              <span>SQLite</span>
+              <span>Jinja2</span>
+              <span>Gunicorn / Render</span>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://studyscript.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="glass-btn highlight-btn"
+              >
+                🌐 Live Demo
+              </a>
+              <a
+                href="https://github.com/VaishsCode/StudyScript"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="glass-btn"
+              >
+                💻 GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="links-section" class="page-section">
+        <div class="glass-card text-center">
+          <h1>Connect With Me</h1>
+          <p>Check out my code or connect with me professionally!</p>
+          <div class="social-links">
+            <a href="#" target="_blank" class="glass-btn">GitHub</a>
+            <a href="#" target="_blank" class="glass-btn">LinkedIn</a>
+            <a href="#" target="_blank" class="glass-btn highlight-btn"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="page-section">
+        <div class="glass-card contact-card">
+          <h1>Get In Touch</h1>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Say hello!"
+              ></textarea>
+            </div>
+            <button type="submit" class="glass-btn submit-btn">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for full size view -->
+    <div id="imageModal" class="image-modal" onclick="closeModal(event)">
+      <span class="modal-close" onclick="closeModal(event)">&times;</span>
+      <img
+        class="modal-content"
+        id="fullImage"
+        src="./assets/StudyScript-Dashboard-08-24-2026_12_11_AM.png"
+        alt="Full Size Dashboard View"
+      />
+    </div>
+
+    <script>
+      function openModal() {
+        document.getElementById("imageModal").style.display = "flex";
+      }
+
+      function closeModal(event) {
+        if (
+          event.target.classList.contains("image-modal") ||
+          event.target.classList.contains("modal-close")
+        ) {
+          document.getElementById("imageModal").style.display = "none";
+        }
+      }
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          document.getElementById("imageModal").style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
